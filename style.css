@@ -1,0 +1,81 @@
+/* @font-face {
+  src: "mael.ttf";
+  font-family: "mael";
+} */
+
+@font-face {
+    font-family: mael;
+    src: url(mael.ttf);
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    font-family: mael;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  main {
+    height: 100%;
+    width: 100%;
+    background-image: url("burger.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .overly {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(28 29 28 / 75%);
+  }
+  
+  .overly .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(238, 238, 238);
+  }
+  .center > h1 {
+    font-size: 7.5rem;
+    letter-spacing: 20px;
+  }
+  
+  .center > button {
+    padding: 1rem 2rem;
+    background: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(238, 238, 238);
+  
+    letter-spacing: 20px;
+    font-family: mael;
+  }
+  .center > button:hover {
+    background: black;
+    color: white;
+    border: none;
+  }
+  
+  @media (min-width: 320px) and (max-width: 675px) {
+    .center > h1 {
+      font-size: 3.5rem;
+      letter-spacing: 20px;
+    }
+  
+    .center > button {
+      letter-spacing: 8px;
+    }
+  }
+  
